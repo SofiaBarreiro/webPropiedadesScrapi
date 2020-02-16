@@ -1,0 +1,45 @@
+{
+  "info": {
+    "name": "Propiedades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Habitaciones": {
+      "required": true,
+      "min": 0,
+      "default": 0,
+      "type": "integer"
+    },
+    "Banios": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "min": 0
+    },
+    "Descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "AlaVenta": {
+      "type": "boolean",
+      "default": true,
+      "private": true,
+      "required": true
+    },
+    "Imagenes": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "propiedades"
+}

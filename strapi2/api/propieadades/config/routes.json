@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/propieadades",
+      "handler": "propieadades.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/propieadades/count",
+      "handler": "propieadades.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/propieadades/:id",
+      "handler": "propieadades.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/propieadades",
+      "handler": "propieadades.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/propieadades/:id",
+      "handler": "propieadades.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/propieadades/:id",
+      "handler": "propieadades.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

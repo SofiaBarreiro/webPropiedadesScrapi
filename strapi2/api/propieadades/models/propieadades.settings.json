@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Propieadades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "Banios": {
+      "type": "integer",
+      "private": true,
+      "default": 0,
+      "min": 0
+    },
+    "Habitaciones": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "Imagenes": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "propieadades"
+}
