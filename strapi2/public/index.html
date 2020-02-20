@@ -17,6 +17,8 @@
 </head>
 <style>
     body {
+        margin: 0;
+        padding: 0;
         background: #67B26F;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
@@ -25,32 +27,67 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     
-    img {
+    #primerFoto {
         width: 150%;
     }
     
-    table {
+    #titulo {
         background-color: black;
         width: 100%;
+    }
+    
+    #primerFoto {
+        width: 100%;
+        object-position: -20% 0;
+        position: cover;
+    }
+    
+    #encabezado {
+        /* width of container */
+        /* height of container */
+        border: 5px solid black;
+        object-fit: cover;
+        background-image: url("/strapi2/public/img/1366_768_20100802103321355523.jpg");
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        opacity: 0.6;
+    }
+    
+    #encabezado>img {
+        width: 1000px;
+        height: 600px;
+        margin: -400px -200px -300px -200px;
+        position: cover;
     }
 </style>
 
 <body lang="es">
 
-
-    <table>
+    <table id="encabezado">
         <tr>
             <td>
-                <h1>Bienvenidos a mi pagina de propiedades</h1>
-
-
+                <!-- <img id="primerFoto" src="/strapi2/public/img/1366_768_20100802103321355523.jpg" alt="..."> -->
             </td>
         </tr>
     </table>
+    <table id="titulo">
+        <tr>
+            <td>
+                <center>
+                    <h1>Bienvenidos a mi pagina de propiedades</h1>
+
+                </center>
+            </td>
+        </tr>
+    </table>
+
+
+
     <center>
 
         <div class="card" style="width: 18rem;">
-            <img src="/strapi2/public/img/casa-prefabricada.jpg" class="card-img-top" alt="...">
+            <img id="primerFoto" src="/strapi2/public/img/casa-prefabricada.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
